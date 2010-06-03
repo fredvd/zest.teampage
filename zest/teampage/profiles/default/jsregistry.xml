@@ -2,4 +2,12 @@
 <object name="portal_javascripts">
   <javascript cacheable="True" compression="safe" cookable="True" enabled="on"
     expression="" id="teammember.js" inline="False"/>
+  <!-- Make kss available for anonymous, so the email hiding/showing
+       in the team member details portlet works -->
+  <javascript cacheable="True" compression="none" cookable="True" enabled="on"
+    expression="python: here.restrictedTraverse('@@kss_devel_mode').isoff()"
+    id="++resource++kukit.js" inline="False"/>
+  <javascript cacheable="True" compression="none" cookable="True" enabled="on"
+    expression="python: here.restrictedTraverse('@@kss_devel_mode').ison()"
+    id="++resource++kukit-devel.js" inline="False"/>
 </object>
