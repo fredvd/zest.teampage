@@ -2,13 +2,13 @@
 <portlets>
   <portlet
       addview="zest.teammember"
-      title="Zest Team members"
+      title="Team member"
       description="A portlet which shows a random Team member's introduction">
     <for interface="plone.app.portlets.interfaces.IColumn" />
   </portlet>
   <portlet
       addview="zest.teammemberdetails"
-      title="Zest Team Member Details"
+      title="Team Member Details"
       description="A portlet which shows details from a Team Member">
     <for interface="plone.app.portlets.interfaces.IColumn" />
   </portlet>
