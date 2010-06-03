@@ -133,7 +133,7 @@ class TeamMemberView(BaseView):
 
 
 class TeamMemberViewlet(ViewletBase):
-    render = ViewPageTemplateFile('teammember_viewlet.pt')
+    render = ViewPageTemplateFile('templates/teammember_viewlet.pt')
 
 
 class TeamMemberListing(BaseView):
