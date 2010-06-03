@@ -9,8 +9,8 @@
   <!--i18n:registerTranslations directory="locales" /-->
 
   <include file="profiles.zcml" />
-
   <include package=".browser" />
+  <include package=".portlets" />
 
   <class class="zest.teampage.content.teammember.TeamMember">
     <implements interface="plone.portlets.interfaces.ILocalPortletAssignable" />
