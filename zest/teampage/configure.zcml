@@ -6,7 +6,7 @@
 
   <!-- Make this package a Zope 2 product -->
   <five:registerPackage package="." initialize=".initialize" />
-  <!--i18n:registerTranslations directory="locales" /-->
+  <i18n:registerTranslations directory="locales" />
 
   <include file="profiles.zcml" />
   <include package=".browser" />
