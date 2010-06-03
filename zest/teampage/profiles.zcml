@@ -5,7 +5,7 @@
 
   <genericsetup:registerProfile
       name="default"
-      title="zest.teampage"
+      title="Zest Teampage"
       directory="profiles/default"
       description="Installs the zest.teampage package"
       provides="Products.GenericSetup.interfaces.EXTENSION"
