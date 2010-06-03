@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: zest.teampage 1.0\n"
 "POT-Creation-Date: 2010-06-03 17:35+0000\n"
-"PO-Revision-Date: 2009-12-17 17:02+0100\n"
+"PO-Revision-Date: 2010-06-03 19:38+0200\n"
 "Last-Translator: Zest Software <info@zestsoftware.nl>\n"
 "Language-Team: Zest Software <info@zestsoftware.nl>\n"
 "MIME-Version: 1.0\n"
@@ -56,7 +56,7 @@ msgid "Oct"
 msgstr "Okt"
 
 msgid "Sep"
-msgstr ""
+msgstr "Sep"
 
 #: ./portlets/teammemberdetails.py:27
 msgid "Team Member Details"
@@ -126,9 +126,8 @@ msgstr "Vul hier de URL van je Twitter account"
 
 #. Default: "Age"
 #: ./portlets/teammemberdetails.pt:23
-#, fuzzy
 msgid "label_age"
-msgstr "Leeftijd:"
+msgstr "Leeftijd"
 
 #. Default: "Date of birth"
 #: ./content/teammember.py:133
@@ -138,7 +137,6 @@ msgstr "Geboortedatum:"
 #. Default: "Email"
 #: ./content/teammember.py:43
 #: ./portlets/teammemberdetails.pt:36
-#, fuzzy
 msgid "label_email"
 msgstr "E-mail"
 
@@ -162,16 +160,14 @@ msgstr "Freelance"
 #. Default: "Function"
 #: ./content/teammember.py:117
 #: ./portlets/teammemberdetails.pt:8
-#, fuzzy
 msgid "label_function"
-msgstr "Functie:"
+msgstr "Functie"
 
 #. Default: "Hobbies"
 #: ./content/teammember.py:152
 #: ./portlets/teammemberdetails.pt:31
-#, fuzzy
 msgid "label_hobbies"
-msgstr "Hobby's:"
+msgstr "Hobby's"
 
 #. Default: "LinkedIn Link"
 #: ./content/teammember.py:183
@@ -234,9 +230,8 @@ msgstr "Even voorstellen..."
 #. Default: "Specialization"
 #: ./content/teammember.py:124
 #: ./portlets/teammemberdetails.pt:18
-#, fuzzy
 msgid "label_specialization"
-msgstr "Specialisatie:"
+msgstr "Specialisatie"
 
 #. Default: "Surname"
 #: ./content/teammember.py:36
