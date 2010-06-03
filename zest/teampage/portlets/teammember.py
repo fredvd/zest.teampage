@@ -34,13 +34,6 @@ class Renderer(base.Renderer):
         self.anonymous = portal_state.anonymous()
         self.portal_url = portal_state.portal_url()
 
-    @property
-    def available(self):
-        """ Only show the teammember introduction on the homepage
-        """
-
-        return (self.context.portal_type == "Homepage")
-
     @memoize
     def _data(self):
         return []
