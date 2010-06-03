@@ -1,0 +1,160 @@
+/* *** Start team member portlet *** */
+.teammember-portlet {
+  width: 224px;
+  position: relative;
+}
+#portal-column-one .teammember-portlet .portletTopLeft {background: none;}
+#teammember_viewlet .portletHeader a {z-index: 1;}
+
+#teamMemberIntroduction .shortIntroTitle, #teamMemberIntroduction .recentBlogTitle {
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 1px;
+  padding: 5px 15px 8px;
+  width: 187px;
+  margin-left: -15px;
+}
+
+#teamMemberIntroduction .recentBlogTitle {
+  margin: 10px 0 5px -15px;
+}
+#teamMemberIntroduction .teamMemberFullName,
+#teamMemberIntroduction .teamMemberQuote {padding: 5px 0px;}
+
+#teamMemberIntroduction .teamMemberFullName {
+  color: #00669f;
+  font-weight: bold;
+}
+#teammember_viewlet a img {
+  border: none;
+  text-decoration: none;
+  vertical-align: top;
+  margin-left: -13px;
+  padding-left: 1px;
+  width: 211px;
+}
+.ourTeam {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.blogPortletTitle {
+	display: block;
+	clear: both;
+}
+
+.blogPortletDate {
+	display: block;
+	font-size: 10px;
+	color: #666666;
+}
+/* *** End team member portlet *** */
+
+/* *** Start team member details portlet *** */
+.teammember-portlet #teammemberdetails {padding-top: 4px;}
+/* *** End team member details portlet *** */
+
+
+/* *** Start Team Member view ** */
+.teammember-info th {text-align: right;}
+
+.teamMemberPortrait {
+  float: right;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+/* *** End Team Member view *** */
+
+/* *** Start Team Member listing *** */
+.minheight {
+  width: 1px;
+  float:left;
+  height: 375px;
+}
+.teamMemberListing {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+.teamMemberListPosition {position: relative;}
+
+.teamMemberListing .team-portrait {
+  height: 80px;
+  vertical-align: bottom;
+}
+.teamMemberListing .team-name {
+  background: #ea6800;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  padding: 0;
+  text-transform: capitalize;
+}
+.teamMemberListing .team-name div {
+  padding: 2px 0 3px;
+}
+.teamMemberListing td img {
+  vertical-align: bottom;
+  padding: 0;
+  margin: 0;
+}
+.teamMemberListing a {
+  width: 91px;
+  height: 14px;
+  display: block;
+  padding-top: 50px;
+  border-left: 1px solid #fff;
+  margin-left: -1px;
+}
+.teamMemberListing a .member-info,
+.teamMemberListing a .listPortrait {
+  visibility: hidden;
+  position: absolute;
+}
+.teamMemberListing a:hover .member-info {
+  visibility: visible;
+  background-color: #fff;
+  border: 1px solid #999;
+  padding: 4px 10px;
+  font-weight: bold;
+  color: #2193D1;
+  text-align: center;
+  z-index: 2;
+  margin-top: 12px;
+}
+.teamMemberListing .listPortrait {
+  right: 4px;
+  top: 16px;
+  width: 197px;
+  height: 295px;
+  z-index: 1;
+}
+.teamMemberListing a:hover .listPortrait {
+  visibility: visible;
+}
+.teamMemberListing a:hover .member-info .function {
+  color: #00243F;
+}
+/* *** End Team Member listing *** */
+
+#region-content .teamMemberFullName {
+	padding: 7px 20px 0 25px;
+	font-weight: bold;
+	font-size: 12px;
+}
+#region-content .teamMemberQuote {
+	display: block;
+	padding-bottom: 12px;
+	padding-top: 0;
+}
+.shortIntroTitle a {
+  background-color: #C9DCF2;
+  padding-left: 25px;
+}
+
+#teammemberdetails div {
+  font-weight: bold;
+  margin-top: 6px;
+}
+

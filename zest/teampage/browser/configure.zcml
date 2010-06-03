@@ -7,9 +7,13 @@
       name="teammember.js"
       file="javascript/teammember.js"
       />
+  <browser:resource
+      name="teampage.css"
+      file="stylesheets/teampage.css"
+      />
   <!--browser:resourceDirectory
-      name="zest.teampage.stylesheets"
-      directory="stylesheets"
+      name="zest.teampage.images"
+      directory="images"
       /-->
 
   <!-- Team Member -->
