@@ -1,0 +1,20 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    i18n_domain="zest.teampage">
+
+  <!-- Make this package a Zope 2 product -->
+  <five:registerPackage package="." initialize=".initialize" />
+  <!--i18n:registerTranslations directory="locales" /-->
+
+  <include file="profiles.zcml" />
+
+  <include package=".browser" />
+
+  <class class="zest.teampage.content.teammember.TeamMember">
+    <implements interface="plone.portlets.interfaces.ILocalPortletAssignable" />
+    <implements interface="zest.emailhider.interfaces.IMailable" />
+  </class>
+
+</configure>

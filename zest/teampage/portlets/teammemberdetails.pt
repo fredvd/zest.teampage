@@ -1,0 +1,59 @@
+<dl class="portlet teammember-portlet" i18n:domain="zest.teampage">
+
+   <dt class="portletHeader"></dt>
+   <dd class="portletItem">
+      <div id="teammemberdetails">
+
+         <div tal:condition="context/function" i18n:translate="label_function">Function:</div>
+         <span>
+           <span tal:condition="context/function" tal:omit-tag="" tal:content="context/function"></span>
+           <tal:freelance condition="context/getFreelance" tal:omit-tag="">
+             (<span i18n:translate="label_freelance" tal:omit-tag="">Freelance</span>)
+           </tal:freelance>
+         </span>
+
+         <div tal:condition="context/specialization" i18n:translate="label_specialization">Specialization:</div>
+         <span tal:condition="context/specialization" tal:content="context/specialization"></span>
+
+         <div tal:condition="context/getAge" i18n:translate="label_age">Age:</div>
+         <span tal:condition="context/getAge">
+           <span tal:omit-tag="" tal:content="context/getAge">99</span>
+           <span tal:omit-tag="" i18n:translate="label_years" >years</span>
+         </span>
+
+         <div tal:condition="context/hobbies" i18n:translate="label_hobbies">Hobbies:</div>
+         <span tal:condition="context/hobbies" tal:content="view/getHobbies"></span>
+
+         <div tal:condition="context/email" i18n:translate="label_email">Email:</div>
+         <tal:email condition="context/email" replace="structure context/@@emailhider" />
+
+        <tal:socialmediaicons define="author context/getId;
+                                      author_content python:view.get_zest_blog_items(author)">
+          <div id="SocialMediaIconsBox">
+            <div tal:condition="context/getLinkedin_link"
+                 class="LinkedInIcon socialMediaIcon">
+
+              <a title="Check my LinkedIn profile" i18n:attributes="title label_our_team_LinkedIn" tal:attributes="href context/getLinkedin_link">
+              </a>
+            </div>
+            <div tal:condition="context/getTwitter_link"
+                  class="TwitterIcon socialMediaIcon">
+              <a title="Follow me on Twitter" i18n:attributes="title label_our_team_Twitter"  tal:attributes="href context/getTwitter_link">
+              </a>
+            </div>
+
+            <div tal:condition="author_content"
+                 class="ZestIcon socialMediaIcon">
+              <a title="Read my weblog"  i18n:attributes="title label_our_team_blog" tal:attributes="href string:${context/portal_url}/nieuws/blog/index.html/blog_view?Creator=${context/getId}">
+              </a>
+            </div>
+            <div class="visualClear"></div>
+          </div>
+          </tal:socialmediaicons>
+
+      </div>
+
+   </dd>
+   <dd class="portletFooter">
+   </dd>
+</dl>

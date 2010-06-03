@@ -1,0 +1,21 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="zest.teampage">
+
+  <genericsetup:registerProfile
+      name="default"
+      title="zest.teampage"
+      directory="profiles/default"
+      description="Installs the zest.teampage package"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <genericsetup:importStep
+      name="zest.teampage.various"
+      title="Zest Teampage: miscellaneous import steps"
+      description="Various import steps that are not handled by GS import/export handlers."
+      handler="zest.teampage.setuphandlers.setupVarious">
+  </genericsetup:importStep>
+
+</configure>

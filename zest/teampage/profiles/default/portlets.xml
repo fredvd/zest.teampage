@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<portlets>
+  <portlet
+      addview="zest.teammember"
+      title="Zest Team members"
+      description="A portlet which shows a random Team member's introduction">
+    <for interface="plone.app.portlets.interfaces.IColumn" />
+  </portlet>
+  <portlet
+      addview="zest.teammemberdetails"
+      title="Zest Team Member Details"
+      description="A portlet which shows details from a Team Member">
+    <for interface="plone.app.portlets.interfaces.IColumn" />
+  </portlet>
+</portlets>

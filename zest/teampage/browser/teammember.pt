@@ -1,0 +1,58 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="zest.teampage">
+<body>
+
+<metal:main fill-slot="main">
+  <tal:main-macro metal:define-macro="main">
+
+    <div tal:replace="structure provider:plone.abovecontenttitle" />
+
+    <h1 class="documentFirstHeading"
+        tal:content="view/getFullName" />
+
+        <div tal:condition="context/portrait_large|nothing"
+          class="teamMemberPortrait">
+          <img src=""
+               alt=""
+               tal:replace="structure python:view.get_image_tag('portrait_large', scale='portrait_large')" />
+        </div>
+
+    <div tal:replace="structure provider:plone.belowcontenttitle" />
+
+    <div tal:replace="structure provider:plone.abovecontentbody" />
+
+    <div tal:condition="context/getPersonal"
+         tal:content="structure context/getPersonal" />
+
+  <tal:authorContent define= "author context/getId;
+      blog_items python:view.get_blog_items(author);"
+                       condition="blog_items">
+
+    <div class="blogItemsListing">
+     <h2 i18n:translate="heading_blog_items">
+         Blog Items:
+     </h2>
+
+      <tal:blogitems repeat="item blog_items">
+        <a tal:attributes="href item/url"
+           tal:content="item/title">title</a>
+        <span tal:content="python:toLocalizedTime(item['date'])">
+          Date
+        </span>
+        <div class="VisualClear"></div>
+      </tal:blogitems>
+     </div>
+     </tal:authorContent>
+
+    <div tal:replace="structure provider:plone.belowcontentbody" />
+
+  </tal:main-macro>
+</metal:main>
+
+</body>
+</html>

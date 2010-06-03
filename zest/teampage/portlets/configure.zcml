@@ -1,0 +1,28 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="zest.teampage">
+
+    <!-- Ensure Plone's portlets ZCML has already been processed; without
+         this, we may get a permission lookup error
+      -->
+    <include package="plone.app.portlets" />
+
+    <plone:portlet
+        name="zest.teammember"
+        interface=".teammember.ITeamMemberPortlet"
+        assignment=".teammember.Assignment"
+        renderer=".teammember.Renderer"
+        addview=".teammember.AddForm"
+        />
+
+    <plone:portlet
+        name="zest.teammemberdetails"
+        interface=".teammemberdetails.ITeamMemberDetailsPortlet"
+        assignment=".teammemberdetails.Assignment"
+        renderer=".teammemberdetails.Renderer"
+        addview=".teammemberdetails.AddForm"
+        />
+
+</configure>

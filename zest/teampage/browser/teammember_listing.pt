@@ -1,0 +1,67 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="zest.teampage">
+<body>
+
+<metal:main fill-slot="main">
+  <tal:main-macro metal:define-macro="main">
+
+    <div tal:replace="structure provider:plone.abovecontenttitle" />
+
+    <h1 class="documentFirstHeading"
+        tal:content="context/Title">
+      Our team
+    </h1>
+
+    <div tal:replace="structure provider:plone.belowcontenttitle" />
+
+    <div tal:replace="structure provider:plone.abovecontentbody" />
+    <div class="minheight"></div>
+    <p class="documentDescription" tal:content="context/Description" />
+
+    <div class="teamMemberListPosition">
+       <table class="teamMemberListing" cellpadding="0" cellspacing="0">
+         <tbody valign="top">
+         <tal:members repeat="four_members view/get_batched_teammembers">
+           <tr>
+             <td tal:repeat="member four_members"
+               class="team-portrait">
+               <a href="" style=""
+                  tal:attributes="href member/url;
+                                  style string:background-image:url(${member/portrait_url});">
+
+                  <div class="member-info">
+                     <div tal:content="member/name" />
+                     <div class="function">
+                        <span tal:replace="member/function" />
+                        <tal:freelance condition="member/freelance">
+                           (<span i18n:translate="label_freelance">Freelance</span>)
+                        </tal:freelance>
+                     </div>
+                  </div>
+                  <div class="listPortrait" tal:condition="python: member['has_portrait_hover']"><img src=""
+                       tal:replace="structure member/hover_tag" /></div>
+               </a>
+             </td>
+           </tr>
+           <tr>
+              <td tal:repeat="member four_members"
+                  class="team-name">
+                 <div tal:content="member/firstname" />
+              </td>
+           </tr>
+          </tal:members>
+         </tbody>
+       </table>
+    </div>
+    <div tal:replace="structure provider:plone.belowcontentbody" />
+
+    </tal:main-macro>
+</metal:main>
+
+</body>
+</html>

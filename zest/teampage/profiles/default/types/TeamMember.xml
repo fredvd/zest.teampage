@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<object name="TeamMember"
+   meta_type="Factory-based Type Information with dynamic views"
+   xmlns:i18n="http://xml.zope.org/namespaces/i18n">
+ <property name="title">Team Member</property>
+ <property name="description">A member of the team.</property>
+ <property name="content_icon">user.gif</property>
+ <property name="content_meta_type">TeamMember</property>
+ <property name="product">zest.teampage</property>
+ <property name="factory">addTeamMember</property>
+ <property name="immediate_view">teammember_view</property>
+ <property name="global_allow">True</property>
+ <property name="filter_content_types">True</property>
+ <property name="allowed_content_types"/>
+ <property name="allow_discussion">False</property>
+ <property name="default_view">teammember_view</property>
+ <property name="view_methods">
+  <element value="teammember_view"/>
+ </property>
+ <property name="default_view_fallback">False</property>
+ <alias from="(Default)" to="teammember_view"/>
+ <alias from="edit" to="atct_edit"/>
+ <alias from="index.html" to="(dynamic view)"/>
+ <alias from="properties" to="base_metadata"/>
+ <alias from="sharing" to="@@sharing"/>
+ <alias from="view" to="teammember_view"/>
+ <action title="View" action_id="view" category="object" condition_expr=""
+    url_expr="string:${object_url}" visible="True">
+  <permission value="View"/>
+ </action>
+ <action title="Edit" action_id="edit" category="object" condition_expr=""
+    url_expr="string:${object_url}/edit" visible="True">
+  <permission value="Modify portal content"/>
+ </action>
+</object>

@@ -1,0 +1,59 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="zest.teampage">
+
+  <!-- Team Member -->
+  <browser:page
+      for="zest.teampage.interfaces.ITeamMember"
+      name="teammember_view"
+      class=".teammember.TeamMemberView"
+      permission="zope2.View"
+      template="teammember.pt"
+      allowed_interface="zest.teampage.interfaces.ITeamMemberView"
+      />
+
+  <browser:page
+      for="zest.teampage.interfaces.ITeamMember"
+      name="teammember_introduction"
+      class=".teammember.TeamMemberView"
+      permission="zope2.View"
+      template="teammember_introduction.pt"
+      allowed_interface="zest.teampage.interfaces.ITeamMemberView"
+      />
+
+  <include package="plone.app.contentmenu" />
+
+  <browser:page
+      for="*"
+      name="random_teammember"
+      class=".teammember.TeamMemberView"
+      permission="zope2.View"
+      allowed_attributes="get_random_teammember"
+      />
+
+  <browser:viewlet
+      name="zest.teammember"
+      manager="zest.teampage.interfaces.ITeamMemberManager"
+      class=".teammember.TeamMemberViewlet"
+      permission="zope2.View"
+      />
+
+  <browser:page
+      for="*"
+      name="teammember_listing"
+      class=".teammember.TeamMemberListing"
+      permission="zope2.View"
+      template="teammember_listing.pt"
+      />
+
+  <!-- register the display menu names for the views -->
+  <browser:menuItem
+      for="Products.ATContentTypes.interface.IATFolder"
+      menu="plone_displayviews"
+      title="Team Member Listing"
+      action="@@teammember_listing"
+      description="Show all team members in a folder"
+      />
+
+</configure>

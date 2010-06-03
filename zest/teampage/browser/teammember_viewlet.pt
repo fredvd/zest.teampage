@@ -1,0 +1,4 @@
+<tal:comment replace="nothing">
+  This div will be replaced with the actual team member content
+</tal:comment>
+<div id="teammember_viewlet" />

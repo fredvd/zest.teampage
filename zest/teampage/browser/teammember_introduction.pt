@@ -1,0 +1,70 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      i18n:domain="zest.teampage">
+<body>
+   <dl class="portlet teammember-portlet">
+
+      <dt class="portletHeader"></dt>
+      <dd class="portletItem">
+         <a tal:condition="context/absolute_url|nothing"
+            tal:attributes="href context/absolute_url">
+            <img src="" alt=""
+               tal:replace="structure python:view.get_image_tag('portrait_intro', scale='normal')"
+               tal:condition="context/portrait_intro|nothing" />
+         </a>
+         <div id="teamMemberIntroduction">
+            <div class="shortIntroTitle"
+               i18n:translate="label_short_intro">
+               Short introduction...
+            </div>
+            <div class="teamMemberFullName">
+               <span tal:replace="view/getFullName" />:
+            </div>
+            <div class="teamMemberQuote"
+               tal:condition="context/Description">
+               <span tal:replace="structure context/Description" />
+
+               <a tal:attributes="href string:${context/portal_url}/about-us/our-team"
+                  class="ourTeam"
+                  i18n:translate="label_our_team"
+                  tal:condition="python:view.language()=='en'">Our team...</a>
+
+               <a tal:attributes="href string:${context/portal_url}/over/team"
+                  class="ourTeam"
+                  i18n:translate="label_our_team"
+                  tal:condition="python:view.language()=='nl'">Our team...</a>
+
+            </div>
+
+          <tal:socialmediaicons define="author context/getId;
+                                        author_content python:view.get_zest_blog_items(author)">
+          <div id="SocialMediaIconsBox">
+            <div tal:condition="context/getLinkedin_link"
+                 class="LinkedInIcon socialMediaIcon">
+
+              <a title="Check my LinkedIn profile" i18n:attributes="title label_our_team_LinkedIn" tal:attributes="href context/getLinkedin_link">
+              </a>
+            </div>
+            <div tal:condition="context/getTwitter_link"
+                  class="TwitterIcon socialMediaIcon">
+              <a title="Follow me on Twitter" i18n:attributes="title label_our_team_Twitter"  tal:attributes="href context/getTwitter_link">
+              </a>
+            </div>
+            <div tal:condition="author_content"
+                 class="ZestIcon socialMediaIcon">
+              <a title="Read my weblog"  i18n:attributes="title label_our_team_blog" tal:attributes="href string:${context/portal_url}/nieuws/blog/index.html/blog_view?Creator=${context/getId}">
+              </a>
+            </div>
+            <div class="visualClear"></div>
+          </div>
+          </tal:socialmediaicons>
+        </div>
+      </dd>
+      <dd class="portletFooter">
+      </dd>
+  </dl>
+</body>
+</html>
