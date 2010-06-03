@@ -9,7 +9,7 @@
       name="teammember_view"
       class=".teammember.TeamMemberView"
       permission="zope2.View"
-      template="teammember.pt"
+      template="templates/teammember.pt"
       allowed_interface="zest.teampage.interfaces.ITeamMemberView"
       />
 
@@ -18,7 +18,7 @@
       name="teammember_introduction"
       class=".teammember.TeamMemberView"
       permission="zope2.View"
-      template="teammember_introduction.pt"
+      template="templates/teammember_introduction.pt"
       allowed_interface="zest.teampage.interfaces.ITeamMemberView"
       />
 
@@ -44,7 +44,7 @@
       name="teammember_listing"
       class=".teammember.TeamMemberListing"
       permission="zope2.View"
-      template="teammember_listing.pt"
+      template="templates/teammember_listing.pt"
       />
 
   <!-- register the display menu names for the views -->
