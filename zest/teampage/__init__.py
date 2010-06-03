@@ -1,5 +1,4 @@
 from Products.Archetypes import atapi
-from Products.CMFCore.DirectoryView import registerDirectory
 from Products.CMFCore.permissions import AddPortalContent
 from Products.CMFCore import utils as cmfutils
 
@@ -8,8 +7,6 @@ from zope.i18nmessageid import MessageFactory
 from config import PROJECTNAME
 
 ZestTeamPageMessageFactory = MessageFactory(u'zest.teampage')
-
-registerDirectory('skins', globals())
 
 
 def initialize(context):

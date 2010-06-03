@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <object name="portal_javascripts">
   <javascript cacheable="True" compression="safe" cookable="True" enabled="on"
-    expression="" id="teammember.js" inline="False"/>
+    expression="" id="++resource++teammember.js" inline="False"/>
   <!-- Make kss available for anonymous, so the email hiding/showing
        in the team member details portlet works -->
   <javascript cacheable="True" compression="none" cookable="True" enabled="on"

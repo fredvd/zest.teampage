@@ -3,6 +3,15 @@
     xmlns:browser="http://namespaces.zope.org/browser"
     i18n_domain="zest.teampage">
 
+  <browser:resource
+      name="teammember.js"
+      file="javascript/teammember.js"
+      />
+  <!--browser:resourceDirectory
+      name="zest.teampage.stylesheets"
+      directory="stylesheets"
+      /-->
+
   <!-- Team Member -->
   <browser:page
       for="zest.teampage.interfaces.ITeamMember"
