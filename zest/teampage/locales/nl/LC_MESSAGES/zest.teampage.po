@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: zest.teampage 1.0\n"
-"POT-Creation-Date: 2010-06-03 17:30+0000\n"
+"POT-Creation-Date: 2010-06-03 17:35+0000\n"
 "PO-Revision-Date: 2009-12-17 17:02+0100\n"
 "Last-Translator: Zest Software <info@zestsoftware.nl>\n"
 "Language-Team: Zest Software <info@zestsoftware.nl>\n"
@@ -124,8 +124,9 @@ msgstr "Een korte tekst bedoeld als introductie."
 msgid "help_twitter_link"
 msgstr "Vul hier de URL van je Twitter account"
 
-#. Default: "Age:"
-#: ./portlets/teammemberdetails.pt:18
+#. Default: "Age"
+#: ./portlets/teammemberdetails.pt:23
+#, fuzzy
 msgid "label_age"
 msgstr "Leeftijd:"
 
@@ -134,9 +135,9 @@ msgstr "Leeftijd:"
 msgid "label_birthdate"
 msgstr "Geboortedatum:"
 
-#. Default: "Email:"
+#. Default: "Email"
 #: ./content/teammember.py:43
-#: ./portlets/teammemberdetails.pt:27
+#: ./portlets/teammemberdetails.pt:36
 #, fuzzy
 msgid "label_email"
 msgstr "E-mail"
@@ -154,19 +155,21 @@ msgstr "Voornaam:"
 #. Default: "Freelance"
 #: ./browser/templates/teammember_listing.pt:42
 #: ./content/teammember.py:192
-#: ./portlets/teammemberdetails.pt:11
+#: ./portlets/teammemberdetails.pt:13
 msgid "label_freelance"
 msgstr "Freelance"
 
-#. Default: "Function:"
+#. Default: "Function"
 #: ./content/teammember.py:117
-#: ./portlets/teammemberdetails.pt:7
+#: ./portlets/teammemberdetails.pt:8
+#, fuzzy
 msgid "label_function"
 msgstr "Functie:"
 
-#. Default: "Hobbies:"
+#. Default: "Hobbies"
 #: ./content/teammember.py:152
-#: ./portlets/teammemberdetails.pt:24
+#: ./portlets/teammemberdetails.pt:31
+#, fuzzy
 msgid "label_hobbies"
 msgstr "Hobby's:"
 
@@ -182,19 +185,19 @@ msgstr "Ons team..."
 
 #. Default: "Check my LinkedIn profile"
 #: ./browser/templates/teammember_introduction.pt:48
-#: ./portlets/teammemberdetails.pt:36
+#: ./portlets/teammemberdetails.pt:46
 msgid "label_our_team_LinkedIn"
 msgstr "Bekijk mijn LinkedIn profiel"
 
 #. Default: "Follow me on Twitter"
 #: ./browser/templates/teammember_introduction.pt:53
-#: ./portlets/teammemberdetails.pt:41
+#: ./portlets/teammemberdetails.pt:51
 msgid "label_our_team_Twitter"
 msgstr "Volg mij op Twitter"
 
 #. Default: "Read my weblog"
 #: ./browser/templates/teammember_introduction.pt:58
-#: ./portlets/teammemberdetails.pt:47
+#: ./portlets/teammemberdetails.pt:57
 msgid "label_our_team_blog"
 msgstr "Lees mijn weblog"
 
@@ -228,9 +231,10 @@ msgstr "Grote foto:"
 msgid "label_short_intro"
 msgstr "Even voorstellen..."
 
-#. Default: "Specialization:"
+#. Default: "Specialization"
 #: ./content/teammember.py:124
-#: ./portlets/teammemberdetails.pt:15
+#: ./portlets/teammemberdetails.pt:18
+#, fuzzy
 msgid "label_specialization"
 msgstr "Specialisatie:"
 
@@ -250,7 +254,7 @@ msgid "label_twitter_link"
 msgstr "Twitter Link"
 
 #. Default: "years"
-#: ./portlets/teammemberdetails.pt:21
+#: ./portlets/teammemberdetails.pt:27
 msgid "label_years"
 msgstr "jaar"
 

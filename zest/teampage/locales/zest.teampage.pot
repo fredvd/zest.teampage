@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: zest.teampage 1.0\n"
-"POT-Creation-Date: 2010-06-03 17:30+0000\n"
+"POT-Creation-Date: 2010-06-03 17:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -121,8 +121,8 @@ msgstr ""
 msgid "help_twitter_link"
 msgstr ""
 
-#. Default: "Age:"
-#: ./portlets/teammemberdetails.pt:18
+#. Default: "Age"
+#: ./portlets/teammemberdetails.pt:23
 msgid "label_age"
 msgstr ""
 
@@ -131,9 +131,9 @@ msgstr ""
 msgid "label_birthdate"
 msgstr ""
 
-#. Default: "Email:"
+#. Default: "Email"
 #: ./content/teammember.py:43
-#: ./portlets/teammemberdetails.pt:27
+#: ./portlets/teammemberdetails.pt:36
 msgid "label_email"
 msgstr ""
 
@@ -150,19 +150,19 @@ msgstr ""
 #. Default: "Freelance"
 #: ./browser/templates/teammember_listing.pt:42
 #: ./content/teammember.py:192
-#: ./portlets/teammemberdetails.pt:11
+#: ./portlets/teammemberdetails.pt:13
 msgid "label_freelance"
 msgstr ""
 
-#. Default: "Function:"
+#. Default: "Function"
 #: ./content/teammember.py:117
-#: ./portlets/teammemberdetails.pt:7
+#: ./portlets/teammemberdetails.pt:8
 msgid "label_function"
 msgstr ""
 
-#. Default: "Hobbies:"
+#. Default: "Hobbies"
 #: ./content/teammember.py:152
-#: ./portlets/teammemberdetails.pt:24
+#: ./portlets/teammemberdetails.pt:31
 msgid "label_hobbies"
 msgstr ""
 
@@ -178,19 +178,19 @@ msgstr ""
 
 #. Default: "Check my LinkedIn profile"
 #: ./browser/templates/teammember_introduction.pt:48
-#: ./portlets/teammemberdetails.pt:36
+#: ./portlets/teammemberdetails.pt:46
 msgid "label_our_team_LinkedIn"
 msgstr ""
 
 #. Default: "Follow me on Twitter"
 #: ./browser/templates/teammember_introduction.pt:53
-#: ./portlets/teammemberdetails.pt:41
+#: ./portlets/teammemberdetails.pt:51
 msgid "label_our_team_Twitter"
 msgstr ""
 
 #. Default: "Read my weblog"
 #: ./browser/templates/teammember_introduction.pt:58
-#: ./portlets/teammemberdetails.pt:47
+#: ./portlets/teammemberdetails.pt:57
 msgid "label_our_team_blog"
 msgstr ""
 
@@ -224,9 +224,9 @@ msgstr ""
 msgid "label_short_intro"
 msgstr ""
 
-#. Default: "Specialization:"
+#. Default: "Specialization"
 #: ./content/teammember.py:124
-#: ./portlets/teammemberdetails.pt:15
+#: ./portlets/teammemberdetails.pt:18
 msgid "label_specialization"
 msgstr ""
 
@@ -246,7 +246,7 @@ msgid "label_twitter_link"
 msgstr ""
 
 #. Default: "years"
-#: ./portlets/teammemberdetails.pt:21
+#: ./portlets/teammemberdetails.pt:27
 msgid "label_years"
 msgstr ""
 

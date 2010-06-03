@@ -4,7 +4,9 @@
    <dd class="portletItem">
       <div id="teammemberdetails">
 
-         <div tal:condition="context/function" i18n:translate="label_function">Function:</div>
+         <div tal:condition="context/function">
+           <tal:block i18n:translate="label_function">Function</tal:block>:
+         </div>
          <span>
            <span tal:condition="context/function" tal:omit-tag="" tal:content="context/function"></span>
            <tal:freelance condition="context/getFreelance" tal:omit-tag="">
@@ -12,19 +14,27 @@
            </tal:freelance>
          </span>
 
-         <div tal:condition="context/specialization" i18n:translate="label_specialization">Specialization:</div>
+         <div tal:condition="context/specialization">
+           <tal:block i18n:translate="label_specialization">Specialization</tal:block>:
+         </div>
          <span tal:condition="context/specialization" tal:content="context/specialization"></span>
 
-         <div tal:condition="context/getAge" i18n:translate="label_age">Age:</div>
+         <div tal:condition="context/getAge">
+           <tal:block i18n:translate="label_age">Age</tal:block>:
+         </div>
          <span tal:condition="context/getAge">
            <span tal:omit-tag="" tal:content="context/getAge">99</span>
            <span tal:omit-tag="" i18n:translate="label_years" >years</span>
          </span>
 
-         <div tal:condition="context/hobbies" i18n:translate="label_hobbies">Hobbies:</div>
+         <div tal:condition="context/hobbies">
+           <tal:block i18n:translate="label_hobbies">Hobbies</tal:block>:
+         </div>
          <span tal:condition="context/hobbies" tal:content="view/getHobbies"></span>
 
-         <div tal:condition="context/email" i18n:translate="label_email">Email:</div>
+         <div tal:condition="context/email">
+           <tal:block i18n:translate="label_email">Email</tal:block>:
+         </div>
          <tal:email condition="context/email" replace="structure context/@@emailhider" />
 
         <tal:socialmediaicons define="author context/getId;
