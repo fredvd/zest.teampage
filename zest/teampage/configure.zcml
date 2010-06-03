@@ -11,6 +11,7 @@
   <include file="profiles.zcml" />
   <include package=".browser" />
   <include package=".portlets" />
+  <include package="zest.emailhider" />
 
   <class class="zest.teampage.content.teammember.TeamMember">
     <implements interface="plone.portlets.interfaces.ILocalPortletAssignable" />
