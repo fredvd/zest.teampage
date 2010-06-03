@@ -1,0 +1,252 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2010-06-03 17:30+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: DOMAIN\n"
+
+#: ./portlets/teammember.py:44
+#: ./portlets/teammemberdetails.py:80
+msgid "Add Review Portlet"
+msgstr ""
+
+msgid "Apr"
+msgstr ""
+
+msgid "Aug"
+msgstr ""
+
+msgid "Dec"
+msgstr ""
+
+msgid "Feb"
+msgstr ""
+
+msgid "Jan"
+msgstr ""
+
+msgid "Jul"
+msgstr ""
+
+msgid "Jun"
+msgstr ""
+
+msgid "Mar"
+msgstr ""
+
+msgid "May"
+msgstr ""
+
+msgid "Nov"
+msgstr ""
+
+msgid "Oct"
+msgstr ""
+
+msgid "Sep"
+msgstr ""
+
+#: ./portlets/teammemberdetails.py:27
+msgid "Team Member Details"
+msgstr ""
+
+#: ./portlets/teammember.py:22
+msgid "Team Member Introduction"
+msgstr ""
+
+#: ./portlets/teammemberdetails.py:81
+msgid "This portlet displays Teammember Details"
+msgstr ""
+
+#: ./portlets/teammember.py:45
+msgid "This portlet displays a Teammember introduction from the site"
+msgstr ""
+
+#. Default: "Blog Items:"
+#: ./browser/templates/teammember.pt:37
+msgid "heading_blog_items"
+msgstr ""
+
+#. Default: "Fill in the URL to the RSS feed of your own blog"
+#: ./content/teammember.py:163
+msgid "help_external_blog"
+msgstr ""
+
+#. Default: "Each hobby on a seperate line"
+#: ./content/teammember.py:153
+msgid "help_hobbies"
+msgstr ""
+
+#. Default: "Fill in the URL to your LinkedIn page"
+#: ./content/teammember.py:184
+msgid "help_linkedin_link"
+msgstr ""
+
+#. Default: "Used in the team member listing. Image size should be 91 x 64 pixels."
+#: ./content/teammember.py:73
+msgid "help_portrait"
+msgstr ""
+
+#. Default: "Used in the team member listing for the large image when you hover over a team member. Image size should be 197 x 295 pixels."
+#: ./content/teammember.py:89
+msgid "help_portrait_hover"
+msgstr ""
+
+#. Default: "Image used for the introduction portlet on the homepage. Image size should be 213 x 135 pixels."
+#: ./content/teammember.py:57
+msgid "help_portrait_intro"
+msgstr ""
+
+#. Default: "Used in individual team member page as a large photo for every person. Image size should be 240 x 360 pixels."
+#: ./content/teammember.py:107
+msgid "help_portrait_large"
+msgstr ""
+
+#. Default: "A short text meant as introduction."
+#: ./content/teammember.py:202
+msgid "help_teammember_description"
+msgstr ""
+
+#. Default: "Fill in the URL to your twitter page"
+#: ./content/teammember.py:174
+msgid "help_twitter_link"
+msgstr ""
+
+#. Default: "Age:"
+#: ./portlets/teammemberdetails.pt:18
+msgid "label_age"
+msgstr ""
+
+#. Default: "Date of birth"
+#: ./content/teammember.py:133
+msgid "label_birthdate"
+msgstr ""
+
+#. Default: "Email:"
+#: ./content/teammember.py:43
+#: ./portlets/teammemberdetails.pt:27
+msgid "label_email"
+msgstr ""
+
+#. Default: "External Blog"
+#: ./content/teammember.py:162
+msgid "label_external_blog"
+msgstr ""
+
+#. Default: "First name"
+#: ./content/teammember.py:197
+msgid "label_firstname"
+msgstr ""
+
+#. Default: "Freelance"
+#: ./browser/templates/teammember_listing.pt:42
+#: ./content/teammember.py:192
+#: ./portlets/teammemberdetails.pt:11
+msgid "label_freelance"
+msgstr ""
+
+#. Default: "Function:"
+#: ./content/teammember.py:117
+#: ./portlets/teammemberdetails.pt:7
+msgid "label_function"
+msgstr ""
+
+#. Default: "Hobbies:"
+#: ./content/teammember.py:152
+#: ./portlets/teammemberdetails.pt:24
+msgid "label_hobbies"
+msgstr ""
+
+#. Default: "LinkedIn Link"
+#: ./content/teammember.py:183
+msgid "label_linkedin_link"
+msgstr ""
+
+#. Default: "Our team..."
+#: ./browser/templates/teammember_introduction.pt:30
+msgid "label_our_team"
+msgstr ""
+
+#. Default: "Check my LinkedIn profile"
+#: ./browser/templates/teammember_introduction.pt:48
+#: ./portlets/teammemberdetails.pt:36
+msgid "label_our_team_LinkedIn"
+msgstr ""
+
+#. Default: "Follow me on Twitter"
+#: ./browser/templates/teammember_introduction.pt:53
+#: ./portlets/teammemberdetails.pt:41
+msgid "label_our_team_Twitter"
+msgstr ""
+
+#. Default: "Read my weblog"
+#: ./browser/templates/teammember_introduction.pt:58
+#: ./portlets/teammemberdetails.pt:47
+msgid "label_our_team_blog"
+msgstr ""
+
+#. Default: "Personal"
+#: ./content/teammember.py:144
+msgid "label_personal"
+msgstr ""
+
+#. Default: "Portrait"
+#: ./content/teammember.py:72
+msgid "label_portrait"
+msgstr ""
+
+#. Default: "Hover portrait"
+#: ./content/teammember.py:87
+msgid "label_portrait_hover"
+msgstr ""
+
+#. Default: "Introduction portrait"
+#: ./content/teammember.py:55
+msgid "label_portrait_intro"
+msgstr ""
+
+#. Default: "Large portrait"
+#: ./content/teammember.py:105
+msgid "label_portrait_large"
+msgstr ""
+
+#. Default: "Short introduction..."
+#: ./browser/templates/teammember_introduction.pt:19
+msgid "label_short_intro"
+msgstr ""
+
+#. Default: "Specialization:"
+#: ./content/teammember.py:124
+#: ./portlets/teammemberdetails.pt:15
+msgid "label_specialization"
+msgstr ""
+
+#. Default: "Surname"
+#: ./content/teammember.py:36
+msgid "label_surname"
+msgstr ""
+
+#. Default: "Introduction text"
+#: ./content/teammember.py:200
+msgid "label_teammember_description"
+msgstr ""
+
+#. Default: "Twitter Link"
+#: ./content/teammember.py:173
+msgid "label_twitter_link"
+msgstr ""
+
+#. Default: "years"
+#: ./portlets/teammemberdetails.pt:21
+msgid "label_years"
+msgstr ""
+

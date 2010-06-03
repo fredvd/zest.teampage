@@ -1,0 +1,256 @@
+# Translations for the zest.teampage product.
+# Zest Software <info@zestsoftware.nl>, 2010
+msgid ""
+msgstr ""
+"Project-Id-Version: zest.teampage 1.0\n"
+"POT-Creation-Date: 2010-06-03 17:30+0000\n"
+"PO-Revision-Date: 2009-12-17 17:02+0100\n"
+"Last-Translator: Zest Software <info@zestsoftware.nl>\n"
+"Language-Team: Zest Software <info@zestsoftware.nl>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: nl\n"
+"Language-Name: Nederlands\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: zest.teampage\n"
+"X-Is-Fallback-For: nl-be nl-nl\n"
+
+#: ./portlets/teammember.py:44
+#: ./portlets/teammemberdetails.py:80
+msgid "Add Review Portlet"
+msgstr "Voeg Review Portlet toe"
+
+msgid "Apr"
+msgstr "Apr"
+
+msgid "Aug"
+msgstr "Aug"
+
+msgid "Dec"
+msgstr "Dec"
+
+msgid "Feb"
+msgstr "Feb"
+
+msgid "Jan"
+msgstr "Jan"
+
+msgid "Jul"
+msgstr "Jul"
+
+msgid "Jun"
+msgstr "Jun"
+
+msgid "Mar"
+msgstr "Mrt"
+
+msgid "May"
+msgstr "Mei"
+
+msgid "Nov"
+msgstr "Nov"
+
+msgid "Oct"
+msgstr "Okt"
+
+msgid "Sep"
+msgstr ""
+
+#: ./portlets/teammemberdetails.py:27
+msgid "Team Member Details"
+msgstr "Teamlid details"
+
+#: ./portlets/teammember.py:22
+msgid "Team Member Introduction"
+msgstr "Teamlid introductie"
+
+#: ./portlets/teammemberdetails.py:81
+msgid "This portlet displays Teammember Details"
+msgstr "Dit portlet laat de extra gegevens van een teamlid zien."
+
+#: ./portlets/teammember.py:45
+msgid "This portlet displays a Teammember introduction from the site"
+msgstr "Deze portlet toon een introductie van een teamlid"
+
+#. Default: "Blog Items:"
+#: ./browser/templates/teammember.pt:37
+msgid "heading_blog_items"
+msgstr "Blog Items"
+
+#. Default: "Fill in the URL to the RSS feed of your own blog"
+#: ./content/teammember.py:163
+msgid "help_external_blog"
+msgstr "Vul hier de URL van je eigen blog in"
+
+#. Default: "Each hobby on a seperate line"
+#: ./content/teammember.py:153
+msgid "help_hobbies"
+msgstr "Iedere hobby op een aparte regel."
+
+#. Default: "Fill in the URL to your LinkedIn page"
+#: ./content/teammember.py:184
+msgid "help_linkedin_link"
+msgstr "Vul hier de URL van je LinkedIn pagina in"
+
+#. Default: "Used in the team member listing. Image size should be 91 x 64 pixels."
+#: ./content/teammember.py:73
+msgid "help_portrait"
+msgstr "Wordt gebruikt in de teamlidlijst. Afbeeldingsgrootte is 91 x 64 pixels."
+
+#. Default: "Used in the team member listing for the large image when you hover over a team member. Image size should be 197 x 295 pixels."
+#: ./content/teammember.py:89
+msgid "help_portrait_hover"
+msgstr "Wordt gebruikt in de teamlidlijst voor de grote afbeelding als men over een teamlid hovert. Afbeeldingsgrootte is 197 x 295 pixels."
+
+#. Default: "Image used for the introduction portlet on the homepage. Image size should be 213 x 135 pixels."
+#: ./content/teammember.py:57
+msgid "help_portrait_intro"
+msgstr "Wordt gebruikt in de introductieportlet. Afbeeldingsgrootte is 213 x 135 pixels."
+
+#. Default: "Used in individual team member page as a large photo for every person. Image size should be 240 x 360 pixels."
+#: ./content/teammember.py:107
+msgid "help_portrait_large"
+msgstr "Staat op individuele teamlidpagina's als een grote foto voor iedere persoon. Afbeeldingsgrootte is 240 x 360 pixels."
+
+#. Default: "A short text meant as introduction."
+#: ./content/teammember.py:202
+msgid "help_teammember_description"
+msgstr "Een korte tekst bedoeld als introductie."
+
+#. Default: "Fill in the URL to your twitter page"
+#: ./content/teammember.py:174
+msgid "help_twitter_link"
+msgstr "Vul hier de URL van je Twitter account"
+
+#. Default: "Age:"
+#: ./portlets/teammemberdetails.pt:18
+msgid "label_age"
+msgstr "Leeftijd:"
+
+#. Default: "Date of birth"
+#: ./content/teammember.py:133
+msgid "label_birthdate"
+msgstr "Geboortedatum:"
+
+#. Default: "Email:"
+#: ./content/teammember.py:43
+#: ./portlets/teammemberdetails.pt:27
+#, fuzzy
+msgid "label_email"
+msgstr "E-mail"
+
+#. Default: "External Blog"
+#: ./content/teammember.py:162
+msgid "label_external_blog"
+msgstr "Externe Blog"
+
+#. Default: "First name"
+#: ./content/teammember.py:197
+msgid "label_firstname"
+msgstr "Voornaam:"
+
+#. Default: "Freelance"
+#: ./browser/templates/teammember_listing.pt:42
+#: ./content/teammember.py:192
+#: ./portlets/teammemberdetails.pt:11
+msgid "label_freelance"
+msgstr "Freelance"
+
+#. Default: "Function:"
+#: ./content/teammember.py:117
+#: ./portlets/teammemberdetails.pt:7
+msgid "label_function"
+msgstr "Functie:"
+
+#. Default: "Hobbies:"
+#: ./content/teammember.py:152
+#: ./portlets/teammemberdetails.pt:24
+msgid "label_hobbies"
+msgstr "Hobby's:"
+
+#. Default: "LinkedIn Link"
+#: ./content/teammember.py:183
+msgid "label_linkedin_link"
+msgstr "LinkedIn Link"
+
+#. Default: "Our team..."
+#: ./browser/templates/teammember_introduction.pt:30
+msgid "label_our_team"
+msgstr "Ons team..."
+
+#. Default: "Check my LinkedIn profile"
+#: ./browser/templates/teammember_introduction.pt:48
+#: ./portlets/teammemberdetails.pt:36
+msgid "label_our_team_LinkedIn"
+msgstr "Bekijk mijn LinkedIn profiel"
+
+#. Default: "Follow me on Twitter"
+#: ./browser/templates/teammember_introduction.pt:53
+#: ./portlets/teammemberdetails.pt:41
+msgid "label_our_team_Twitter"
+msgstr "Volg mij op Twitter"
+
+#. Default: "Read my weblog"
+#: ./browser/templates/teammember_introduction.pt:58
+#: ./portlets/teammemberdetails.pt:47
+msgid "label_our_team_blog"
+msgstr "Lees mijn weblog"
+
+#. Default: "Personal"
+#: ./content/teammember.py:144
+msgid "label_personal"
+msgstr "Persoonlijk"
+
+#. Default: "Portrait"
+#: ./content/teammember.py:72
+msgid "label_portrait"
+msgstr "Pasfoto:"
+
+#. Default: "Hover portrait"
+#: ./content/teammember.py:87
+msgid "label_portrait_hover"
+msgstr "Hover foto:"
+
+#. Default: "Introduction portrait"
+#: ./content/teammember.py:55
+msgid "label_portrait_intro"
+msgstr "Introductie foto:"
+
+#. Default: "Large portrait"
+#: ./content/teammember.py:105
+msgid "label_portrait_large"
+msgstr "Grote foto:"
+
+#. Default: "Short introduction..."
+#: ./browser/templates/teammember_introduction.pt:19
+msgid "label_short_intro"
+msgstr "Even voorstellen..."
+
+#. Default: "Specialization:"
+#: ./content/teammember.py:124
+#: ./portlets/teammemberdetails.pt:15
+msgid "label_specialization"
+msgstr "Specialisatie:"
+
+#. Default: "Surname"
+#: ./content/teammember.py:36
+msgid "label_surname"
+msgstr "Achternaam"
+
+#. Default: "Introduction text"
+#: ./content/teammember.py:200
+msgid "label_teammember_description"
+msgstr "Introductietekst:"
+
+#. Default: "Twitter Link"
+#: ./content/teammember.py:173
+msgid "label_twitter_link"
+msgstr "Twitter Link"
+
+#. Default: "years"
+#: ./portlets/teammemberdetails.pt:21
+msgid "label_years"
+msgstr "jaar"
+
