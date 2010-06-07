@@ -1,6 +1,7 @@
 from DateTime import DateTime
 import random
 
+from Acquisition import aq_inner
 from plone.app.layout.viewlets.common import ViewletBase
 from zope.interface import implements
 
@@ -12,6 +13,8 @@ from Products.CMFPlone.utils import getToolByName
 from zest.teampage.interfaces import ITeamMemberView
 
 import feedparser
+
+TEAMPAGE_COLUMN_COUNT = 4
 
 
 class BaseView(BrowserView):
@@ -167,7 +170,12 @@ class TeamMemberListing(BaseView):
 
         return result
 
-    def get_batched_teammembers(self, columns=4):
+    def get_batched_teammembers(self, columns=None):
+        if columns is None:
+            context = aq_inner(self.context)
+            props = getToolByName(context, 'portal_properties').site_properties
+            columns = props.getProperty('teampage_column_count',
+                                        TEAMPAGE_COLUMN_COUNT)
         if columns < 1:
             return []
         batched_results = []

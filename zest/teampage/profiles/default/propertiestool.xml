@@ -3,5 +3,6 @@
  <object name="site_properties" meta_type="Plone Property Sheet">
   <property name="title">Site wide properties</property>
   <property name="calendar_starting_year" type="int">1940</property>
+  <property name="teampage_column_count" type="int">4</property>
  </object>
 </object>
