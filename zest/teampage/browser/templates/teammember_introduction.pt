@@ -27,15 +27,9 @@
                tal:condition="context/Description">
                <span tal:replace="structure context/Description" />
 
-               <a tal:attributes="href string:${context/portal_url}/about-us/our-team"
+               <a tal:attributes="href string:${context/absolute_url}/../"
                   class="ourTeam"
-                  i18n:translate="label_our_team"
-                  tal:condition="python:view.language()=='en'">Our team...</a>
-
-               <a tal:attributes="href string:${context/portal_url}/over/team"
-                  class="ourTeam"
-                  i18n:translate="label_our_team"
-                  tal:condition="python:view.language()=='nl'">Our team...</a>
+                  i18n:translate="label_our_team">Our team...</a>
 
             </div>
 
