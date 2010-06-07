@@ -14,10 +14,8 @@
   width: 187px;
   margin-left: -15px;
 }
+#teamMemberIntroduction .recentBlogTitle { margin: 10px 0 5px -15px; }
 
-#teamMemberIntroduction .recentBlogTitle {
-  margin: 10px 0 5px -15px;
-}
 #teamMemberIntroduction .teamMemberFullName,
 #teamMemberIntroduction .teamMemberQuote { padding: 5px 0px; }
 #teamMemberIntroduction .teamMemberFullName { font-weight: bold; }
@@ -33,12 +31,10 @@
   margin-top: 10px;
   font-weight: bold;
 }
-
 .blogPortletTitle {
 	display: block;
 	clear: both;
 }
-
 .blogPortletDate {
 	display: block;
 	font-size: 10px;
@@ -47,7 +43,7 @@
 /* *** End team member portlet *** */
 
 /* *** Start team member details portlet *** */
-.teammember-portlet #teammemberdetails {padding-top: 4px;}
+.teammember-portlet #teammemberdetails { padding-top: 4px; }
 /* *** End team member details portlet *** */
 
 
@@ -71,7 +67,7 @@
   border-spacing: 0;
   border-collapse: collapse;
 }
-.teamMemberListPosition {position: relative;}
+.teamMemberListPosition { position: relative; }
 
 .teamMemberListing .team-portrait {
   height: 80px;
@@ -85,9 +81,8 @@
   padding: 0;
   text-transform: capitalize;
 }
-.teamMemberListing .team-name div {
-  padding: 2px 0 3px;
-}
+.teamMemberListing .team-name div { padding: 2px 0 3px; }
+
 .teamMemberListing td img {
   vertical-align: bottom;
   padding: 0;
@@ -124,12 +119,9 @@
   height: 295px;
   z-index: 1;
 }
-.teamMemberListing a:hover .listPortrait {
-  visibility: visible;
-}
-.teamMemberListing a:hover .member-info .function {
-  color: #00243F;
-}
+.teamMemberListing a:hover .listPortrait { visibility: visible; }
+.teamMemberListing a:hover .member-info .function { color: #00243F; }
+
 /* *** End Team Member listing *** */
 
 #region-content .teamMemberFullName {
@@ -146,9 +138,7 @@
   background-color: #C9DCF2;
   padding-left: 25px;
 }
-
 #teammemberdetails div {
   font-weight: bold;
   margin-top: 6px;
 }
-
