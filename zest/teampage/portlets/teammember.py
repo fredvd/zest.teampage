@@ -34,6 +34,20 @@ class Renderer(base.Renderer):
         self.anonymous = portal_state.anonymous()
         self.portal_url = portal_state.portal_url()
 
+    @property
+    def available(self):
+        """Is the portlet available?
+
+        Do not render ourselves in a portal_factory context, as then
+        the teammember.js javascript that renders a random teammember
+        will call a url like
+        portal_factory/Document/@@random_teammember/get_random_teammember
+        which will give a BadRequest error in the logs:
+
+        The id "@@random_teammember" is invalid because it begins with "@@".
+        """
+        return not self.context.isTemporary()
+
     @memoize
     def _data(self):
         return []
