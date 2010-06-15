@@ -46,7 +46,12 @@ class Renderer(base.Renderer):
 
         The id "@@random_teammember" is invalid because it begins with "@@".
         """
-        return not self.context.isTemporary()
+        try:
+            return not self.context.isTemporary()
+        except AttributeError:
+            # Plone Site root, e.g. in plone_control_panel instead of
+            # front-page.
+            return True
 
     @memoize
     def _data(self):
