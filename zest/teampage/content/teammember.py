@@ -47,9 +47,8 @@ schema = ATContentTypeSchema.copy() + \
                 name='portrait_intro',
                 languageIndependent=True,
                 schemata=u'pictures',
-                original_size=(213, 135),
-                sizes={'normal': (213, 135),
-                         'thumb': (128, 128),
+                original_size=(187, 135),
+                sizes={'normal': (187, 135),
                          'portrait_intro': (213, 135)},
                 widget=atapi.ImageWidget(
                     label=_(u'label_portrait_intro',
