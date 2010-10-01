@@ -49,14 +49,14 @@ schema = ATContentTypeSchema.copy() + \
                 schemata=u'pictures',
                 original_size=(187, 135),
                 sizes={'normal': (187, 135),
-                         'portrait_intro': (213, 135)},
+                         'portrait_intro': (187, 135)},
                 widget=atapi.ImageWidget(
                     label=_(u'label_portrait_intro',
                         default=u'Introduction portrait'),
                     description=_(
                     u'help_portrait_intro',
                     default=u'Image used for the introduction portlet on ' +
-                    u'the homepage. Image size should be 213 x 135 pixels.'),
+                    u'the homepage. Image size should be 187 x 135 pixels.'),
                 )
             ),
             atapi.ImageField(
