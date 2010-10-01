@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: zest.teampage 1.0\n"
-"POT-Creation-Date: 2010-06-03 17:35+0000\n"
+"POT-Creation-Date: 2010-09-07 14:05+0000\n"
 "PO-Revision-Date: 2010-06-03 19:38+0200\n"
 "Last-Translator: Zest Software <info@zestsoftware.nl>\n"
 "Language-Team: Zest Software <info@zestsoftware.nl>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Domain: zest.teampage\n"
 "X-Is-Fallback-For: nl-be nl-nl\n"
 
-#: ./portlets/teammember.py:44
+#: ./portlets/teammember.py:63
 #: ./portlets/teammemberdetails.py:80
 msgid "Add Review Portlet"
 msgstr "Voeg Review Portlet toe"
@@ -70,7 +70,7 @@ msgstr "Teamlid introductie"
 msgid "This portlet displays Teammember Details"
 msgstr "Dit portlet laat de extra gegevens van een teamlid zien."
 
-#: ./portlets/teammember.py:45
+#: ./portlets/teammember.py:64
 msgid "This portlet displays a Teammember introduction from the site"
 msgstr "Deze portlet toon een introductie van een teamlid"
 
@@ -104,10 +104,10 @@ msgstr "Wordt gebruikt in de teamlidlijst. Afbeeldingsgrootte is 91 x 64 pixels.
 msgid "help_portrait_hover"
 msgstr "Wordt gebruikt in de teamlidlijst voor de grote afbeelding als men over een teamlid hovert. Afbeeldingsgrootte is 197 x 295 pixels."
 
-#. Default: "Image used for the introduction portlet on the homepage. Image size should be 213 x 135 pixels."
+#. Default: "Image used for the introduction portlet on the homepage. Image size should be 187 x 135 pixels."
 #: ./content/teammember.py:57
 msgid "help_portrait_intro"
-msgstr "Wordt gebruikt in de introductieportlet. Afbeeldingsgrootte is 213 x 135 pixels."
+msgstr "Wordt gebruikt in de introductieportlet. Afbeeldingsgrootte is 187 x 135 pixels."
 
 #. Default: "Used in individual team member page as a large photo for every person. Image size should be 240 x 360 pixels."
 #: ./content/teammember.py:107
@@ -180,19 +180,19 @@ msgid "label_our_team"
 msgstr "Ons team..."
 
 #. Default: "Check my LinkedIn profile"
-#: ./browser/templates/teammember_introduction.pt:48
+#: ./browser/templates/teammember_introduction.pt:42
 #: ./portlets/teammemberdetails.pt:46
 msgid "label_our_team_LinkedIn"
 msgstr "Bekijk mijn LinkedIn profiel"
 
 #. Default: "Follow me on Twitter"
-#: ./browser/templates/teammember_introduction.pt:53
+#: ./browser/templates/teammember_introduction.pt:47
 #: ./portlets/teammemberdetails.pt:51
 msgid "label_our_team_Twitter"
 msgstr "Volg mij op Twitter"
 
 #. Default: "Read my weblog"
-#: ./browser/templates/teammember_introduction.pt:58
+#: ./browser/templates/teammember_introduction.pt:52
 #: ./portlets/teammemberdetails.pt:57
 msgid "label_our_team_blog"
 msgstr "Lees mijn weblog"
