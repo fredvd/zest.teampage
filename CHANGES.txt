@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.1 (unreleased)
+1.1 (2010-10-15)
 ----------------
 
 - fixed introduction portlet image size/scale [fred]
